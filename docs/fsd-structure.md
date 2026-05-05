@@ -176,6 +176,7 @@ src/entities/inventory/api/inventory-api.ts
 
 src/entities/inventory/model/types.ts
 src/entities/inventory/model/get-days-since-last-checked.ts
+src/entities/inventory/model/get-days-until-next-restock.ts
 src/entities/inventory/model/get-days-until-next-cycle-restock.ts
 src/entities/inventory/model/get-estimated-current-stock.ts
 src/entities/inventory/model/get-required-stock-until-next-cycle-restock.ts
