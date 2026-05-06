@@ -26,3 +26,11 @@ export interface InventoryItem {
   supplier?: string;
   updatedAt: string;
 }
+
+export interface InventoryListResponse {
+  items: InventoryItem[];
+}
+
+export interface InventoryItemResponse {
+  item: InventoryItem;
+}
