@@ -3,6 +3,8 @@ export type {
   InventoryItem,
   InventoryStatus,
   InventoryUnit,
+  InventoryListResponse,
+  InventoryItemResponse,
 } from "./types";
 
 export { getDaysSinceLastChecked } from "./get-days-since-last-checked";

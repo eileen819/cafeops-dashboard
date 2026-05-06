@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./app/styles/global.css";
 import { RouterProvider } from "react-router";
 import { router } from "@/app/routes/router";
+import { QueryClientProvider } from "@/app/providers/query-client-provider";
 
 const rootElement = document.getElementById("root") as HTMLElement;
 
@@ -25,7 +26,9 @@ async function enableMocking() {
 enableMocking().then(() => {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <QueryClientProvider>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
     </React.StrictMode>,
   );
 });
